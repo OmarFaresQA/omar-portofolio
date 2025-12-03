@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Omar Fares | Senior QA Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Senior QA Engineer with strong experience in manual, automation, integration and mobile app testing, API testing, and Agile teams." />
+    <link rel="icon" type="image/png" href="tab-icon.png" />
+
+    <style>
+        :root {
+            --bg: #020617;
+            --bg-soft: #020617;
+            --card: #020617;
+            --card-soft: #020617;
+            --accent: #3b82f6;
+            --accent-soft: rgba(59, 130, 246, 0.15);
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --border: #1f2937;
+            --radius-lg: 1.2rem;
+            --radius-md: 0.9rem;
+            --shadow: 0 22px 45px rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #020617, #020617 55%);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .wrapper {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 1.5rem 1.25rem 3rem;
+        }
+
+        /* NAV */
+        header {
+            position: sticky;
+            top: 0.75rem;
+            z-index: 10;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.7rem 1rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.8);
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .avatar {
+            width: 38px;
+            height: 38px;
+            border-radius: 999px;
+            background: conic-gradient(from 160deg, #4f46e5, #06b6d4, #22c55e, #4f46e5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #0b1120;
+        }
+
+        .nav-text-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .nav-text-sub {
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+        }
+
+        .nav-links a {
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            border: 1px solid transparent;
+            color: var(--muted);
+            white-space: nowrap;
+            transition: 0.18s ease;
+        }
+
+        .nav-links a:hover {
+            border-color: rgba(148, 163, 184, 0.8);
+            color: var(--text);
+            background: rgba(15, 23, 42, 0.9);
+        }
+
+        .nav-links a.cta {
+            background: var(--accent);
+            color: #020617;
+            font-weight: 600;
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.6);
+            border-color: transparent;
+        }
+
+        main {
+            margin-top: 1.8rem;
+            display: grid;
+            grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+            gap: 1.8rem;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 880px) {
+            main {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav {
+                border-radius: 1rem;
+            }
+        }
+
+        /* HERO LEFT */
+        .card {
+            background: radial-gradient(circle at top, #020617, #020617 55%);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 1.6rem 1.7rem;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: -40%;
+            background:
+                radial-gradient(circle at 10% 0%, rgba(56, 189, 248, 0.1), transparent 55%),
+                radial-gradient(circle at 80% 0%, rgba(59, 130, 246, 0.3), transparent 60%),
+                radial-gradient(circle at 50% 110%, rgba(16, 185, 129, 0.15), transparent 60%);
+            opacity: 0.9;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.25rem 0.8rem 0.25rem 0.25rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid rgba(148, 163, 184, 0.4);
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-bottom: 0.8rem;
+        }
+
+        .eyebrow-dot {
+            width: 18px;
+            height: 18px;
+            border-radius: 999px;
+            background: conic-gradient(from 140deg, #22c55e, #84cc16, #22c55e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .eyebrow-dot-inner {
+            width: 8px;
+            height: 8px;
+            border-radius: inherit;
+            background: #020617;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 3vw, 2.4rem);
+            letter-spacing: -0.03em;
+            margin-bottom: 0.4rem;
+        }
+
+        .hero-title span {
+            background: linear-gradient(to right, #38bdf8, #818cf8, #a855f7);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 0.95rem;
+            color: var(--muted);
+            max-width: 36rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero-subtitle b {
+            color: #e5e7eb;
+            font-weight: 500;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .meta-chip {
+            font-size: 0.78rem;
+            padding: 0.25rem 0.7rem;
+            border-radius: 999px;
+            border: 1px solid rgba(75, 85, 99, 0.9);
+            background: rgba(15, 23, 42, 0.95);
+            color: var(--muted);
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            margin-bottom: 1.3rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.55rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid transparent;
+            font-size: 0.85rem;
+            cursor: pointer;
+            background: transparent;
+            color: inherit;
+            transition: 0.18s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #2563eb, #4f46e5);
+            border-color: transparent;
+            color: #e5e7eb;
+            font-weight: 600;
+            box-shadow: 0 14px 32px rgba(37, 99, 235, 0.7);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 18px 42px rgba(37, 99, 235, 0.85);
+        }
+
+        .btn-ghost {
+            border-color: rgba(148, 163, 184, 0.4);
+            color: var(--muted);
+            background: rgba(15, 23, 42, 0.8);
+        }
+
+        .btn-ghost:hover {
+            color: var(--text);
+            border-color: rgba(148, 163, 184, 0.9);
+            background: rgba(15, 23, 42, 0.95);
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            font-size: 0.78rem;
+        }
+
+        .hero-tag {
+            padding: 0.2rem 0.7rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px dashed rgba(75, 85, 99, 0.95);
+            color: var(--muted);
+        }
+
+        /* RIGHT COLUMN: SUMMARY & STACK */
+        .side {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .side-card {
+            background: rgba(15, 23, 42, 0.96);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 1.3rem 1.4rem;
+            box-shadow: var(--shadow);
+        }
+
+        .section-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 0.7rem;
+        }
+
+        .section-heading {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .section-text {
+            font-size: 0.88rem;
+            color: var(--muted);
+        }
+
+        .pill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-top: 0.7rem;
+        }
+
+        .pill {
+            padding: 0.25rem 0.7rem;
+            border-radius: 999px;
+            border: 1px solid rgba(55, 65, 81, 0.95);
+            background: rgba(15, 23, 42, 0.95);
+            font-size: 0.78rem;
+            color: #e5e7eb;
+        }
+
+        .pill.subtle {
+            color: var(--muted);
+            border-style: dashed;
+        }
+
+        /* BELOW: EXPERIENCE / PROJECTS / SKILLS / EDUCATION */
+        .sections-grid {
+            margin-top: 1.8rem;
+            display: grid;
+            grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+            gap: 1.6rem;
+        }
+
+        @media (max-width: 880px) {
+            .sections-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        .section-card {
+            background: rgba(15, 23, 42, 0.96);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            padding: 1.3rem 1.4rem 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .section-header-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.5rem;
+            align-items: baseline;
+            margin-bottom: 0.6rem;
+        }
+
+        .section-caption {
+            font-size: 0.78rem;
+            color: var(--muted);
+        }
+
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .exp-item {
+            border-radius: var(--radius-md);
+            padding: 0.8rem 0.9rem;
+            border: 1px solid rgba(31, 41, 55, 0.95);
+            background: rgba(15, 23, 42, 0.98);
+        }
+
+        .exp-top-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.5rem;
+            margin-bottom: 0.15rem;
+        }
+
+        .exp-role {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .exp-company {
+            font-size: 0.83rem;
+            color: var(--muted);
+        }
+
+        .exp-date {
+            font-size: 0.8rem;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .exp-bullets {
+            margin-top: 0.3rem;
+            font-size: 0.8rem;
+            color: #e5e7eb;
+        }
+
+        .exp-bullets ul {
+            list-style-type: disc;
+            padding-left: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .project-item {
+            padding: 0.8rem 0.9rem;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(31, 41, 55, 0.95);
+            background: rgba(15, 23, 42, 0.98);
+        }
+
+        .project-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.1rem;
+        }
+
+        .project-meta {
+            font-size: 0.78rem;
+            color: var(--muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .project-desc {
+            font-size: 0.8rem;
+            color: #e5e7eb;
+            margin-bottom: 0.35rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+
+        .project-tag {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid rgba(55, 65, 81, 0.95);
+            color: var(--muted);
+        }
+
+        .skills-columns {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .skills-columns {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        .skills-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: #e5e7eb;
+        }
+
+        .skills-list {
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        .skills-list ul {
+            list-style-type: disc;
+            padding-left: 1.1rem;
+        }
+
+        .edu-item {
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        .edu-item b {
+            color: #e5e7eb;
+        }
+
+        .courses-list {
+            margin-top: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        .courses-list ul {
+            list-style-type: disc;
+            padding-left: 1.1rem;
+        }
+
+        .lang-list {
+            margin-top: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        .contact-box {
+            margin-top: 0.7rem;
+            padding: 0.7rem 0.9rem;
+            border-radius: var(--radius-md);
+            border: 1px dashed rgba(55, 65, 81, 0.95);
+            background: rgba(15, 23, 42, 0.98);
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-top: 0.4rem;
+        }
+
+        .contact-item {
+            padding: 0.25rem 0.65rem;
+            border-radius: 999px;
+            border: 1px solid rgba(55, 65, 81, 0.95);
+            background: rgba(15, 23, 42, 0.9);
+            font-size: 0.8rem;
+        }
+
+        .contact-item span {
+            color: #e5e7eb;
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 2.2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(15, 23, 42, 0.9);
+            font-size: 0.75rem;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- NAV -->
+        <header>
+            <nav class="nav">
+                <div class="nav-left">
+                    <div class="avatar">OF</div>
+                    <div>
+                        <div class="nav-text-title">Omar Fares</div>
+                        <div class="nav-text-sub">Senior QA Engineer · Cairo, Egypt</div>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact" class="cta">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN HERO -->
+        <main>
+            <!-- LEFT: HERO -->
+            <section class="card" aria-labelledby="hero-title">
+                <div class="eyebrow">
+                    <div class="eyebrow-dot">
+                        <div class="eyebrow-dot-inner"></div>
+                    </div>
+                    Open to new QA opportunities
+                </div>
+
+                <h1 id="hero-title" class="hero-title">
+                    Hi, I'm <span>Omar Fares</span> — Senior QA Engineer.
+                </h1>
+
+                <p class="hero-subtitle">
+                    I'm a <b>Software Test Engineer</b> with a strong passion for software quality,
+                    analytical problem solving, and enhancing products &amp; services through
+                    well-structured testing. I work across <b>web, mobile (Android &amp; iOS),
+                        desktop, Fintech Application and POS systems</b> in Agile environments, from test planning to
+                    execution and reporting.
+                </p>
+
+                <div class="hero-meta">
+                    <div class="meta-chip">📍 Cairo, Egypt</div>
+                    <div class="meta-chip">💼 Senior QA Engineer @ BlackStone eIT</div>
+                    <div class="meta-chip">🧪 Manual, Automation, Integration &amp; API Testing</div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <!-- TODO: Replace # with a real LinkedIn link -->
+                    <a href="https://www.linkedin.com/in/omarfaresqa" target="_blank" class="btn btn-ghost">
+                        View LinkedIn
+                    </a>
+                </div>
+
+                <div class="hero-tags">
+                    <span class="hero-tag">Agile / Scrum</span>
+                    <span class="hero-tag">Mobile App Testing</span>
+                    <span class="hero-tag">Web &amp; Desktop QA</span>
+                    <span class="hero-tag">Test Cases &amp; Bug Reports</span>
+                    <span class="hero-tag">SQL · Firestore</span>
+                    <span class="hero-tag">Postman · Cypress · Maestro</span>
+                </div>
+            </section>
+
+            <!-- RIGHT: SUMMARY & STACK -->
+            <aside class="side">
+                <section class="side-card">
+                    <p class="section-title">Profile</p>
+                    <h2 class="section-heading">About me</h2>
+                    <p class="section-text">
+                        I’m a Software Tester focused on building reliable, maintainable
+                        products and improving user experience through quality. I enjoy
+                        collaborating with cross-functional teams, clarifying requirements,
+                        and driving testing activities across sprints — from designing test
+                        cases to tracking defects and validating releases.
+                    </p>
+
+                    <div class="pill-list">
+                        <span class="pill">Manual &amp; Integration Testing</span>
+                        <span class="pill">Mobile QA (Android &amp; iOS)</span>
+                        <span class="pill">API &amp; DB Testing</span>
+                        <span class="pill subtle">Crashlytics · Sentry · JIRA · TFS</span>
+                    </div>
+                </section>
+
+                <section class="side-card">
+                    <p class="section-title">Stack</p>
+                    <h2 class="section-heading">Tools &amp; Technologies</h2>
+                    <div class="pill-list">
+                        <span class="pill">JIRA</span>
+                        <span class="pill">Azure TFS</span>
+                        <span class="pill">Confluence</span>
+                        <span class="pill">SQL Server</span>
+                        <span class="pill">Firestore</span>
+                        <span class="pill">Postman (API)</span>
+                        <span class="pill">Swagger</span>
+                        <span class="pill">Cypress</span>
+                        <span class="pill">Maestro</span>
+                        <span class="pill">Newman</span>
+                        <span class="pill">JMeter (basic)</span>
+                        <span class="pill subtle">Crashlytics</span>
+                        <span class="pill subtle">Sentry</span>
+                    </div>
+                </section>
+            </aside>
+        </main>
+
+        <!-- EXPERIENCE / PROJECTS / SKILLS / EDUCATION -->
+        <section class="sections-grid">
+            <!-- LEFT COLUMN: EXPERIENCE & PROJECTS -->
+            <div>
+                <!-- EXPERIENCE -->
+                <section id="experience" class="section-card">
+                    <div class="section-header-row">
+                        <h2 class="section-heading">Experience</h2>
+                        <span class="section-caption">From ERP &amp; POS to SaaS &amp; mobile apps</span>
+                    </div>
+
+                    <div class="experience-list">
+                        <article class="exp-item">
+                            <div class="exp-top-row">
+                                <div>
+                                    <div class="exp-role">Senior Quality Assurance Engineer</div>
+                                    <div class="exp-company">BlackStone eIT · Remote</div>
+                                </div>
+                                <div class="exp-date">Dec 2024 – Present</div>
+                            </div>
+                            <div class="exp-bullets">
+                                <ul>
+                                    <li>Manual and integration testing in an Agile (Scrum) environment.</li>
+                                    <li>Design, execute, and maintain test cases; log and track bugs using TFS.</li>
+                                    <li>Review User Story Specifications and system flows using Confluence.</li>
+                                    <li>Collaborate with POs and agile team members on planning, estimation, and sprint
+                                        commitments.</li>
+                                    <li>Proactively raise issues, risks, and blockers in daily stand-ups.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="exp-item">
+                            <div class="exp-top-row">
+                                <div>
+                                    <div class="exp-role">Quality Assurance Engineer</div>
+                                    <div class="exp-company">Camlist · Remote</div>
+                                </div>
+                                <div class="exp-date">Feb 2022 – Nov 2024</div>
+                            </div>
+                            <div class="exp-bullets">
+                                <ul>
+                                    <li>Manual and integration testing for a video-based marketplace mobile app (Android
+                                        &amp; iOS).</li>
+                                    <li>Designed test cases, executed test runs, and reported bugs via JIRA.</li>
+                                    <li>Validated user stories and flows from Confluence documentation.</li>
+                                    <li>Tested mobile app behaviour across different OS and app versions.</li>
+                                    <li>Tracked crashes and production issues using Crashlytics &amp; Sentry, supporting
+                                        releases on test and live servers.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="exp-item">
+                            <div class="exp-top-row">
+                                <div>
+                                    <div class="exp-role">Quality Control Engineer</div>
+                                    <div class="exp-company">Tafeel.TL</div>
+                                </div>
+                                <div class="exp-date">Jul 2021 – Feb 2022</div>
+                            </div>
+                            <div class="exp-bullets">
+                                <ul>
+                                    <li>Manual testing in an Agile environment for digital transformation solutions (web
+                                        &amp; mobile).</li>
+                                    <li>Met with clients to gather new feature requirements and clarify business rules.
+                                    </li>
+                                    <li>Prepared test cases and executed them (Excel-based), reporting and following up
+                                        on bugs.</li>
+                                    <li>Delivered user training, demos, and business explanations to stakeholders.</li>
+                                    <li>Performed DB testing using SQL Server, and created user manuals and release
+                                        notes each sprint.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="exp-item">
+                            <div class="exp-top-row">
+                                <div>
+                                    <div class="exp-role">Quality Control Engineer</div>
+                                    <div class="exp-company">Smartpan Egypt</div>
+                                </div>
+                                <div class="exp-date">Jan 2020 – Jul 2021</div>
+                            </div>
+                            <div class="exp-bullets">
+                                <ul>
+                                    <li>Reviewed and analysed system specifications for ERP, POS, and e-commerce
+                                        systems.</li>
+                                    <li>Manual testing for web, desktop, and POS systems in an Agile environment.</li>
+                                    <li>Created and executed test cases; logged defects via JIRA and followed them till
+                                        closure.</li>
+                                    <li>Performed API testing using Swagger and DB validation using SQL Server.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="exp-item">
+                            <div class="exp-top-row">
+                                <div>
+                                    <div class="exp-role">Quality Control Engineer</div>
+                                    <div class="exp-company">Bedab Software</div>
+                                </div>
+                                <div class="exp-date">Jul 2019 – Jan 2020</div>
+                            </div>
+                            <div class="exp-bullets">
+                                <ul>
+                                    <li>Reviewed and wrote SRS and UML-based requirement and design documents.</li>
+                                    <li>Prepared test plans, strategies, and reports, and executed test cases via a test
+                                        management tool.</li>
+                                    <li>Performed functional testing on ERP modules for restaurants and warehouses.</li>
+                                    <li>Tracked bugs until closure and supported testing on real live projects.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- PROJECTS -->
+                <section id="projects" class="section-card" style="margin-top:1.2rem;">
+                    <div class="section-header-row">
+                        <h2 class="section-heading">Highlighted Projects</h2>
+                        <span class="section-caption">Real products I've tested end-to-end</span>
+                    </div>
+
+                    <div class="projects-list">
+                        <article class="project-item">
+                            <div class="project-title">Camlist · Mobile App &amp; Moderator Dashboard</div>
+                            <div class="project-meta">Video marketplace for pets · Android, iOS &amp; Web</div>
+                            <p class="project-desc">
+                                Tested core marketplace flows, listing creation, video uploads, user accounts,
+                                and moderation tools across the mobile apps and the moderator dashboard web app.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Mobile Testing</span>
+                                <span class="project-tag">Web Admin</span>
+                                <span class="project-tag">Crashlytics &amp; Sentry</span>
+                            </div>
+                        </article>
+
+                        <article class="project-item">
+                            <div class="project-title">MASAR &amp; Correspondence Management · Tafeel</div>
+                            <div class="project-meta">Digital transformation for ministries, universities, banks</div>
+                            <p class="project-desc">
+                                Performed end-to-end testing for web and mobile solutions, including MASAR website and
+                                correspondence management system connecting ministries and universities.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Agile Testing</span>
+                                <span class="project-tag">Client Demos</span>
+                                <span class="project-tag">SQL Server</span>
+                            </div>
+                        </article>
+
+                        <article class="project-item">
+                            <div class="project-title">FODO Ecosystem · Smartpan Egypt</div>
+                            <div class="project-meta">POS &amp; ERP for restaurants, warehouses &amp; e-commerce</div>
+                            <p class="project-desc">
+                                Tested POS, desktop ERP, online e-commerce website, call center, delivery app, and
+                                customer menu app. Covered modules like Stocks, Warehouse, Sales, Purchases, Reports,
+                                HR, and Survey applications.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">POS &amp; Desktop Testing</span>
+                                <span class="project-tag">Web &amp; Mobile</span>
+                                <span class="project-tag">API &amp; DB Testing</span>
+                            </div>
+                        </article>
+
+                        <article class="project-item">
+                            <div class="project-title">ERP System · Bedab</div>
+                            <div class="project-meta">Desktop ERP for restaurant and warehouse operations</div>
+                            <p class="project-desc">
+                                Validated functional flows for stock, warehouse, sales, purchases, reports, and HR,
+                                ensuring requirements and design were correctly implemented.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">ERP QA</span>
+                                <span class="project-tag">Test Plans &amp; Reports</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGHT COLUMN: SKILLS / EDUCATION / CONTACT -->
+            <div>
+                <!-- SKILLS -->
+                <section id="skills" class="section-card">
+                    <div class="section-header-row">
+                        <h2 class="section-heading">Skills</h2>
+                        <span class="section-caption">Technical &amp; testing capabilities</span>
+                    </div>
+
+                    <div class="skills-columns">
+                        <div>
+                            <div class="skills-title">Testing &amp; Process</div>
+                            <div class="skills-list">
+                                <ul>
+                                    <li>Software Development Life Cycle (SDLC)</li>
+                                    <li>Software Testing Life Cycle (STLC)</li>
+                                    <li>Agile / Scrum testing practices</li>
+                                    <li>Black Box &amp; Regression Testing</li>
+                                    <li>Functional &amp; Non-Functional Testing</li>
+                                    <li>Writing test cases &amp; bug reports</li>
+                                    <li>Test planning &amp; reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skills-title">Tools &amp; Technologies</div>
+                            <div class="skills-list">
+                                <ul>
+                                    <li>Database testing with SQL Server &amp; Firestore</li>
+                                    <li>Crash tracking with Crashlytics &amp; Sentry</li>
+                                    <li>API Testing using Postman &amp; Swagger</li>
+                                    <li>Automation basics: Cypress, Maestro, Newman</li>
+                                    <li>Performance basics: JMeter</li>
+                                    <li>Test management via JIRA, TFS, Excel &amp; other tools</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EDUCATION / COURSES / LANGUAGES -->
+                <section id="education" class="section-card" style="margin-top:1.2rem;">
+                    <div class="section-header-row">
+                        <h2 class="section-heading">Education &amp; Certifications</h2>
+                        <span class="section-caption">Formal background</span>
+                    </div>
+
+                    <div class="edu-item">
+                        <b>Bachelor of Computer Science</b><br />
+                        Faculty of Computer and Information Science, Ain Shams University<br />
+                        2013 – 2017 · Grade: Good · Graduation Project: Excellent
+                    </div>
+
+                    <div class="courses-list">
+                        <div style="margin-top:0.6rem; font-weight:600; color:#e5e7eb; font-size:0.85rem;">
+                            Courses &amp; Activities
+                        </div>
+                        <ul>
+                            <li><b>ISTQB-CTFL</b> at Testing Geeks (May 2019 – Jun 2019) — fundamentals of testing,
+                                SDLC, test cases &amp; bug reporting, real live projects.</li>
+                            <li>Faculty Projects: 3D Maze, Hospital System.</li>
+                            <li>ACM at Ain Shams University (2014) — problem solving and coding using C++ and contest
+                                participation.</li>
+                        </ul>
+                    </div>
+
+                    <div class="lang-list">
+                        <div style="margin-top:0.6rem; font-weight:600; color:#e5e7eb; font-size:0.85rem;">
+                            Languages
+                        </div>
+                        <p>
+                            Arabic — Native or Bilingual · English — Full Professional · German — Elementary
+                        </p>
+                    </div>
+                </section>
+
+                <!-- CONTACT -->
+                <section id="contact" class="section-card" style="margin-top:1.2rem;">
+                    <div class="section-header-row">
+                        <h2 class="section-heading">Contact</h2>
+                        <span class="section-caption">Let’s work together</span>
+                    </div>
+
+                    <div class="contact-box">
+                        <p>
+                            Interested in working together or want to discuss a role? Feel free to reach out
+                            via email or phone. I’m open to opportunities in QA, Software Testing, and related roles.
+                        </p>
+
+                        <div class="contact-row">
+                            <div class="contact-item">
+                                📧 <span>omarfaresqa@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                📱 <span>+20 122 926 3559</span>
+                            </div>
+                            <!-- LinkedIn profile -->
+                            <a class="contact-item" href="https://www.linkedin.com/in/omarfaresqa" target="_blank"
+                                rel="noopener noreferrer">
+                                🔗 <span>www.linkedin.com/in/omarfaresqa</span>
+                            </a>
+                            <div class="contact-item">
+                                📍 Cairo, Egypt
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <span>© <span id="year"></span> Omar Fares. All rights reserved.</span>
+                        <span>Built from my CV as a single-page portfolio.</span>
+                    </footer>
+            </div>
+
+            <script>
+                // Set current year
+                document.getElementById('year').textContent = new Date().getFullYear();
+            </script>
+</body>
+
+</html>
